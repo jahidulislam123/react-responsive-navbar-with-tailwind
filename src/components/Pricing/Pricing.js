@@ -4,9 +4,33 @@ import PricingOption from '../PricingOption/PricingOption';
 const Pricing = () => {
     // data banacci 
     const pricingOption = [
-        { id: 1, name: "Free", price: 0 },
-        { id: 2, name: "regular", price: 33 },
-        { id: 3, name: "premium", price: 55 },
+        {
+            id: 1, name: "Free", price: 0, benefits: [
+                'lifetime free',
+                'unlimited deals',
+                'localized deals',
+                'fantastics deals',
+                'crazy deals'
+            ]
+        },
+        {
+            id: 2, name: "regular", price: 33, benefits: [
+                'everything on  free',
+                'unlimited deals',
+                'localized deals',
+                'fantastics deals',
+                'crazy deals'
+            ]
+        },
+        {
+            id: 3, name: "premium", price: 55, benefits: [
+                'evething on regular ',
+                'unlimited deals',
+                'localized deals',
+                'fantastics deals',
+                'crazy deals'
+            ]
+        },
     ]
     return (
         <div className='bg-indigo-300 p-4 mt-8' >
